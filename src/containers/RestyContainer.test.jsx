@@ -5,8 +5,9 @@ import RestyContainer from './RestyContainer';
 
 describe('', () => {
     it('', async () => {
+
         render(<RestyContainer />)
 
-        screen.getByText('Hello', {exact: false})
+        screen.getByText('Resty', {exact: false})
     })
 })
