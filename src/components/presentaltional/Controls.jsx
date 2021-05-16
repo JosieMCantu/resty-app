@@ -32,12 +32,12 @@ function Controls({ onSubmit, onChange, url, text }) {
             <label htmlFor='search-bar'>
                 <input id='search-bar' name='url' value={url} onChange={onChange} />
             </label>
-            <button>Search</button>
+            <button>Go!</button>
             </section>
 
             <section>
                 <br />
-                <textarea name='text' value={text} onChange={onChange} rows="4" cols="50"></textarea>
+                <textarea name='text' value={text} onChange={onChange} rows="8" cols="50"></textarea>
             </section>
 
         </form>
@@ -50,5 +50,4 @@ Controls.propTypes = {
     url: PropTypes.string.isRequired
 }
 
-export default Controls
-
+export default Controls;

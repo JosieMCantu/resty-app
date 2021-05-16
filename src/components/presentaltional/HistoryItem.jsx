@@ -16,4 +16,4 @@ HistoryItem.propTypes = {
     method: PropTypes.string.isRequired,
 }
 
-export default HistoryItem
+export default HistoryItem;
