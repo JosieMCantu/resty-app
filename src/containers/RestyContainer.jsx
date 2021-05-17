@@ -7,10 +7,10 @@ import HistoryList from '../components/presentaltional/HistoryList';
 export default class RestyContainer extends Component {
     state = {
         url: '',
-        response: {response: {}},
         method: 'GET',
         text: '',
         historyItems: [],
+        response: {response: {}},
     }
 
     handleChange = async ({ target }) => {
@@ -37,7 +37,6 @@ export default class RestyContainer extends Component {
                 <h1>Your search History</h1>
                 <HistoryList historyItems={historyItems}/>
                 <Display response={response} />
-                
             </>
         )
     }
