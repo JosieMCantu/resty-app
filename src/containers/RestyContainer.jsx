@@ -26,6 +26,7 @@ export default class RestyContainer extends Component {
         this.setState({historyItems: [...this.state.historyItems, history]});
         
         this.setState({ response: {response: res} });
+        this.setState({url: ''});
     };
 
     render() {
