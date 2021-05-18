@@ -2,6 +2,7 @@
 
 body {
     background-color: dimgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 [type=radio] { 
     position: absolute;
@@ -16,7 +17,7 @@ body {
     outline: 2px solid #f00;
 }
 input {
-    width: 600px;
+    width: 598px;
 }
 img {
     width: 100px;
@@ -24,6 +25,13 @@ img {
 }
 .display {
     background-color: whitesmoke;
+    font-size: 1em;
+    padding: 5px;
+}
+.history {
+    background-color: whitesmoke;
+    font-size: .75em;
+    margin-left: -35px;
 }
 ul {
     background-color: whitesmoke;
@@ -33,4 +41,8 @@ li {
 }
 h1 {
     font-family: 'Reggae One', cursive;;
+}
+textarea {
+    background-color: whitesmoke;
+    margin-left: -.5px;
 }

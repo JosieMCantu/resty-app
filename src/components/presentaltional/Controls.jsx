@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function Controls({ onSubmit, onChange, url, text }) {
     return (
         <form onSubmit={onSubmit}>
-
+            
             <label htmlFor='get'><input type='radio' id='get' name='method' value='GET' onChange={onChange} />
             GET
             <img src={button} alt='black button' /></label>
@@ -24,7 +24,7 @@ function Controls({ onSubmit, onChange, url, text }) {
 
             <section>
             <br />
-            <label htmlFor='search-bar'>
+            <label htmlFor='search-bar'><p>Add API URL:</p>
                 <input data-testid='search-bar' id='search-bar' name='url' value={url} onChange={onChange} />
             </label>
             <button data-testid='that' aria-label='go'>Go!</button>
@@ -32,7 +32,8 @@ function Controls({ onSubmit, onChange, url, text }) {
 
             <section>
                 <br />
-                <textarea name='text' value={text} onChange={onChange} rows="8" cols="50"></textarea>
+                <p>ADD JSON:</p>
+                <textarea name='text' value={text} onChange={onChange} rows="8" cols="73"></textarea>
             </section>
 
         </form>

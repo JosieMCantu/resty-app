@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../app/App.css';
 
 
 function HistoryItem({url, method}) {
     return (
-        <div>
+        <div className={styles.history}>
             <p>Url: {url}</p>
             <p>Method: {method}</p>
         </div>
